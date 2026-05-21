@@ -113,6 +113,8 @@ async function run() {
       res.json(result)
  })
 
+// patchchapicreate
+
  app.patch('/facilities/:id',async (req, res) => {
      const {id} = req.params
      const upDatedData = req.body
