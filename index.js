@@ -107,7 +107,7 @@ async function run() {
       res.json(result)
  })
 //middlware
-  app.get('/facilities/:id',verifyToken,async (req, res) => {
+  app.get('/facilities/:id',async (req, res) => {
      const {id} = req.params
      const result = await facilityCollection.findOne({_id: new ObjectId(id)})
 
