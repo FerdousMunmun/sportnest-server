@@ -82,6 +82,7 @@ async function run() {
 
     const facilityCollection = db.collection("facilities");
     const bookingCollection = db.collection("bookings")
+// getapicreate
 
   app.get('/featured',async (req, res) => {
       const result = await facilityCollection.find().limit(4).toArray();
