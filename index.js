@@ -125,6 +125,7 @@ async function run() {
 
       res.json(result)
  })
+// deleteapicreate
 
    app.delete('/facilities/:id',async (req, res) => {
      const {id} = req.params;
